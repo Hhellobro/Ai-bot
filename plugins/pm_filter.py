@@ -672,22 +672,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":
         buttons = [[
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/+C6IeKn-gFr4zY2Vl')
-        ], [
+            ],[
+            InlineKeyboardButton('CHENNAL', url='https://t.me/+C6IeKn-gFr4zY2Vl'),
+            InlineKeyboardButton('🔔 Group 🤖', url='https://t.me/+hF6385_c6OU0ZTg1')
+            ],[
+            InlineKeyboardButton('🧞‍♀️ MORE 🧐', url='https://t.me/+RXJ3iFRDVUtkNmZl'),
+            InlineKeyboardButton('2nd BOT 🤖', url='https://t.me/XMoviess_bot')
+            ],[
             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
-        ],[
-            InlineKeyboardButton('Developer', url='https://t.me/+qAGZeEs0y2U0YTVl')
-        ]]
+            InlineKeyboardButton('♥️How to use♥️', url='https://t.me/c/2105569125/4')
+            ],[
+            InlineKeyboardButton('⚠️JOIN OUR BACKUP CHENNAL⚠️', url='https://t.me/+BtEgw4ZWrLk2NmY1')
+            ],[
+            InlineKeyboardButton('PREMIUM MEMBERSHIP', url='https://t.me/+RXJ3iFRDVUtkNmZl')
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('♥️ Thank You LazyDeveloper ♥️')
+        await query.answer('♥️ Thank You AlphaDeveloper ♥️')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
@@ -705,7 +710,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "about":
+   """ elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
@@ -728,7 +733,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.SOURCE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )
+        )"""
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('🚪 Back', callback_data='help'),
@@ -807,9 +812,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             btn = [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/+eB4VZt6BDxIxZWRl")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"⚡️ Developer 🦋", url=f"https://t.me/+qAGZeEs0y2U0YTVl")
 
             ]]
             btn_lzdv = [
@@ -832,12 +837,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         _, user_id, movie = data.split(":")
         # Send message to user
         try:
-            btn = [[
+            btn =  [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/+eB4VZt6BDxIxZWRl")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"⚡️ Developer 🦋", url=f"https://t.me/+qAGZeEs0y2U0YTVl")
             ]]
             btn_lzdv = [
                 [
@@ -859,13 +864,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         _, user_id, movie = data.split(":")
         # Send message to user
         try:
-            btn = [[
+            btn =  [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/+eB4VZt6BDxIxZWRl")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
-
+                InlineKeyboardButton(text=f"⚡️ Developer 🦋", url=f"https://t.me/+qAGZeEs0y2U0YTVl")
             ]]
             btn_lzdv = [
                 [
@@ -887,12 +891,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         _, user_id, movie = data.split(":")
         # Send message to user
         try:
-            btn = [[
+            btn =  [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/+eB4VZt6BDxIxZWRl")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
+                InlineKeyboardButton(text=f"⚡️ Developer 🦋", url=f"https://t.me/+qAGZeEs0y2U0YTVl")
             ]]
             btn_lzdv = [
                 [
@@ -914,13 +918,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         _, user_id, movie = data.split(":")
         # Send message to user
         try:
-            btn = [[
+            btn =  [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/+eB4VZt6BDxIxZWRl")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
-
+                InlineKeyboardButton(text=f"⚡️ Developer 🦋", url=f"https://t.me/+qAGZeEs0y2U0YTVl")
             ]]
             btn_lzdv = [
                 [
@@ -942,13 +945,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         _, user_id, movie = data.split(":")
         # Send message to user
         try:
-            btn = [[
+            btn =  [[
                 InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/+eB4VZt6BDxIxZWRl")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
-            ]]
+                InlineKeyboardButton(text=f"⚡️ Developer 🦋", url=f"https://t.me/+qAGZeEs0y2U0YTVl")
+            
+	    ]]
             btn_lzdv = [
                 [
                 InlineKeyboardButton(text=f"🗑 Delete Log ❌", callback_data = "close_data")
@@ -970,13 +974,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         # Send message to user
         try:
             btn = [[
-                InlineKeyboardButton(text=f"💛 Request More 💛", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
+                InlineKeyboardButton(text=f"🔍 Search Here 🔎", url=f"https://telegram.me/{MOVIE_GROUP_USERNAME}")
             ],[
-                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://telegram.me/LazyDeveloperSupport")
+                InlineKeyboardButton(text=f"🐞 REPORT BUG 🐞", url=f"https://t.me/+eB4VZt6BDxIxZWRl")
             ],[
-                InlineKeyboardButton(text=f"⚡️ Learn Bot Making 🦋", url=f"https://youtube.com/@LazyDeveloperr")
-
-            ]]
+                InlineKeyboardButton(text=f"⚡️ Developer 🦋", url=f"https://t.me/+qAGZeEs0y2U0YTVl")
+            
+	    ]]
             btn_lzdv = [
                         [InlineKeyboardButton(text=f"♻ ̶R̶e̶q̶u̶e̶s̶t̶ ̶R̶e̶c̶i̶e̶v̶e̶d ♻", callback_data=f"notify_user_req_rcvd:{user_id}:{movie}")],
                         [InlineKeyboardButton(text=f"✅Upload Done", callback_data=f"notify_userupl:{user_id}:{movie}")],
@@ -1197,7 +1201,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('♥️ Thank You LazyDeveloper ♥️')
+            return await query.answer('♥️ Thank You AlphaDeveloper ♥️')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -1467,7 +1471,7 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0,
         [ 
-	    InlineKeyboardButton(text="⚡ʜᴏᴡ to ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://telegram.me/LazyDeveloper'),
+	    InlineKeyboardButton(text="⚡ʜᴏᴡ to ᴅᴏᴡɴʟᴏᴀᴅ⚡", url='https://t.me/+eB4VZt6BDxIxZWRl'),
         ] 
     )
     if offset != "":
