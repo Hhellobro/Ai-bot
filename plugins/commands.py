@@ -23,12 +23,12 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
+                InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/+C6IeKn-gFr4zY2Vl')
             ],
             [
                 InlineKeyboardButton('🙆🏻 Help 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
+            InlineKeyboardButton('Support', url='https://t.me/+eB4VZt6BDxIxZWRl')
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -49,13 +49,18 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('CHENNAL', url='https://t.me/+C6IeKn-gFr4zY2Vl'),
+            InlineKeyboardButton('🔔 Group 🤖', url='https://t.me/+hF6385_c6OU0ZTg1')
+            ],[
+            InlineKeyboardButton('🧞‍♀️ MORE 🧐', url='https://t.me/+RXJ3iFRDVUtkNmZl'),
+            InlineKeyboardButton('2nd BOT 🤖', url='https://t.me/XMoviess_bot')
             ],[
             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
+            InlineKeyboardButton('♥️How to use♥️', url='https://t.me/c/2105569125/4')
             ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
+            InlineKeyboardButton('⚠️JOIN OUR BACKUP CHENNAL⚠️', url='https://t.me/+BtEgw4ZWrLk2NmY1')
+            ],[
+            InlineKeyboardButton('I want BOT', url='https://t.me/+RXJ3iFRDVUtkNmZl')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -79,7 +84,7 @@ async def start(client, message):
             ],
              [
                 InlineKeyboardButton(
-                    "🦋 SUBSCRIBE YT Channel 🦋", url='https://youtube.com/@LazyDeveloperr'
+                    "🦋 SUBSCRIBE YT Channel 🦋", url='https://youtube.com/@gamingbroshorts5002'
                 )
             ]
         ]
@@ -102,14 +107,19 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕↖️ Add Me To Your Groups ↗️➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🧞‍♀️ Search 🧐', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper')
+            InlineKeyboardButton('CHENNAL', url='https://t.me/+C6IeKn-gFr4zY2Vl'),
+            InlineKeyboardButton('🔔 Group 🤖', url='https://t.me/+hF6385_c6OU0ZTg1')
+            ],[
+            InlineKeyboardButton('🧞‍♀️ MORE 🧐', url='https://t.me/+RXJ3iFRDVUtkNmZl'),
+            InlineKeyboardButton('2nd BOT 🤖', url='https://t.me/XMoviess_bot')
             ],[
             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
-            InlineKeyboardButton('♥️ About ♥️', callback_data='about')
-        ],[
-            InlineKeyboardButton('Watch Tutorial', url='https://youtube.com/LazyDeveloper')
-        ]]
+            InlineKeyboardButton('♥️How to use♥️', url='https://t.me/c/2105569125/4')
+            ],[
+            InlineKeyboardButton('⚠️JOIN OUR BACKUP CHENNAL⚠️', url='https://t.me/+BtEgw4ZWrLk2NmY1')
+            ],[
+            InlineKeyboardButton('I want BOT', url='https://t.me/+RXJ3iFRDVUtkNmZl')
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -384,7 +394,7 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('♥️ Thank You LazyDeveloper ♥️')
+    await message.answer('♥️ Thank You AlphaDeveloper ♥️')
     await message.message.edit('Succesfully Deleted All The Indexed Files.')
 
 
