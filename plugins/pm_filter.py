@@ -710,7 +710,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-   """ elif query.data == "about":
+    elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('🔔 Updates 🤖', url='https://t.me/LazyDeveloper'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
@@ -733,7 +733,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.SOURCE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-        )"""
+	)
     elif query.data == "manuelfilter":
         buttons = [[
             InlineKeyboardButton('🚪 Back', callback_data='help'),
