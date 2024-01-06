@@ -1,5 +1,6 @@
 import re
 from os import getenv, environ
+from urllib.parse import quote_plus
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
