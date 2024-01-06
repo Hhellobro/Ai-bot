@@ -52,7 +52,7 @@ async def start(client, message):
             InlineKeyboardButton('CHENNAL', url='https://t.me/+C6IeKn-gFr4zY2Vl'),
             InlineKeyboardButton('🔔 Group 🤖', url='https://t.me/+hF6385_c6OU0ZTg1')
             ],[
-            InlineKeyboardButton('🧞‍♀️ MORE 🧐', url='https://t.me/+RXJ3iFRDVUtkNmZl'),
+            InlineKeyboardButton('🧞‍♀️ MORE 🧐', url='https://t.me/+mda6zlri2PRlZDA1'),
             InlineKeyboardButton('2nd BOT 🤖', url='https://t.me/XMoviess_bot')
             ],[
             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
@@ -60,7 +60,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('⚠️JOIN OUR BACKUP CHENNAL⚠️', url='https://t.me/+BtEgw4ZWrLk2NmY1')
             ],[
-            InlineKeyboardButton('I want BOT', url='https://t.me/+RXJ3iFRDVUtkNmZl')
+            InlineKeyboardButton('PREMIUM MEMBERSHIP', url='https://t.me/+RXJ3iFRDVUtkNmZl')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -110,7 +110,7 @@ async def start(client, message):
             InlineKeyboardButton('CHENNAL', url='https://t.me/+C6IeKn-gFr4zY2Vl'),
             InlineKeyboardButton('🔔 Group 🤖', url='https://t.me/+hF6385_c6OU0ZTg1')
             ],[
-            InlineKeyboardButton('🧞‍♀️ MORE 🧐', url='https://t.me/+RXJ3iFRDVUtkNmZl'),
+            InlineKeyboardButton('🧞‍♀️ MORE 🧐', url='https://t.me/+mda6zlri2PRlZDA1'),
             InlineKeyboardButton('2nd BOT 🤖', url='https://t.me/XMoviess_bot')
             ],[
             InlineKeyboardButton('🙆🏻 Help 🦾', callback_data='help'),
@@ -118,7 +118,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('⚠️JOIN OUR BACKUP CHENNAL⚠️', url='https://t.me/+BtEgw4ZWrLk2NmY1')
             ],[
-            InlineKeyboardButton('I want BOT', url='https://t.me/+RXJ3iFRDVUtkNmZl')
+            InlineKeyboardButton('PREMIUM MEMBERSHIP', url='https://t.me/+RXJ3iFRDVUtkNmZl')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
