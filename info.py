@@ -27,14 +27,17 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '5635069924').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL','-1002105569125')
-auth_grp = environ.get('AUTH_GROUP','+hF6385_c6OU0ZTg1')
+auth_grp = environ.get('AUTH_GROUP','')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
+username="hellobro"
+password="NJ7s6uaqGfK1MwAp'
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hellobro:NJ7s6uaqGfK1MwAp@cluster0.b4jmsyi.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
+DATABASE_URI = f"mongodb+srv://{quote_plus(username)}:{quote_plus(password)}@cluster0.gtgqxwe.mongodb.net/?retryWrites=true&w=majority"
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002093916487'))
