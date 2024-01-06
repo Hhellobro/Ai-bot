@@ -33,12 +33,12 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-username="hellobro"
-password="NJ7s6uaqGfK1MwAp"
+#username="hellobro"
+#password="NJ7s6uaqGfK1MwAp"
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hellobro:NJ7s6uaqGfK1MwAp@cluster0.b4jmsyi.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-DATABASE_URI = f"mongodb+srv://{quote_plus(username)}:{quote_plus(password)}@cluster0.gtgqxwe.mongodb.net/?retryWrites=true&w=majority"
+#DATABASE_URI = f"mongodb+srv://{quote_plus(username)}:{quote_plus(password)}@cluster0.gtgqxwe.mongodb.net/?retryWrites=true&w=majority"
 
 # Others
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002093916487'))
