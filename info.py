@@ -59,7 +59,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "True")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
 
 #LazyRenamer Configs
-FLOOD = int(environ.get("FLOOD", "10"))
+FLOOD = int(environ.get("FLOOD", "30"))
 LAZY_MODE = bool(environ.get("LAZY_MODE",True))
 #Add user id of the user in this field those who you want to be Authentic user for file renaming features
 lazy_renamers = [int(lazrenamers) if id_pattern.search(lazrenamers) else lazrenamers for lazrenamers in environ.get('LAZY_RENAMERS', '5635069924').split()]
@@ -67,8 +67,8 @@ LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else []
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL','-1001815476245'))
 
 #ai
-OPENAI_API = environ.get("OPENAI_API","")
-AI = is_enabled((environ.get("AI","True")), False)
+OPENAI_API = environ.get("OPENAI_API","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")
+AI = is_enabled((environ.get("AI","True")), True)
 LAZY_AI_LOGS = int(environ.get("LAZY_AI_LOGS","-1002023004406")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of LazyPrincess ]
 # Requested Content template variables ---
 ADMIN_USRNM = environ.get('ADMIN_USRNM','AlphaDeveloperss') # WITHOUT @
