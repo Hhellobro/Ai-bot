@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'AlphaDevloper')
 API_ID = int(environ.get('API_ID','27920615'))
 API_HASH = environ.get('API_HASH', 'fca37d30df0f1d0846d91308f8569a0b') 
-BOT_TOKEN = environ.get('BOT_TOKEN','6865589744:AAF-mGXEDvRGb049wTEgZp8XTv5fl8wKBVU') 
+BOT_TOKEN = environ.get('BOT_TOKEN','6599372758:AAE6jEROvinQJDEFoqsC3MtoouvwThybLvM') 
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -35,7 +35,7 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 # MongoDB information
 #username="hellobro"
 #password="NJ7s6uaqGfK1MwAp"
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hellobro:NJ7s6uaqGfK1MwAp@cluster0.b4jmsyi.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Also:shaniheck@cluster0.jinybzt.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #DATABASE_URI = f"mongodb+srv://{quote_plus(username)}:{quote_plus(password)}@cluster0.gtgqxwe.mongodb.net/?retryWrites=true&w=majority"
